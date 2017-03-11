@@ -1,0 +1,10 @@
+.dashboard {
+	text-align: center;
+}
+.table-leader td, th {
+	background-color: #F5F9FA;
+}
+.towrap {
+	height: 700px;
+	overflow: auto;
+}

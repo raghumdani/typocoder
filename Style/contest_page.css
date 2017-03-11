@@ -1,0 +1,11 @@
+.question_display {
+	border: 1px solid black;
+}
+td, th {
+	background-color: #F5F9FA;
+}
+.notification {
+	padding-top: 15%;
+	margin-left: 20%;
+	margin-right: 20%;
+}

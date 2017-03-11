@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<math.h>
+int a[1000001];
+int main()
+{
+    int t,i,j,n,count;
+    scanf("%d",&t);
+    for(i=2;i<=(int)(sqrt(1000000));i++)
+    {
+        if(a[i]==0)
+            for(j=i*i;j<=100000;j+=i)
+                a[j]=1;
+    }
+    for(i=0;i<t;i++)
+    {
+        count=0;
+        scanf("%d",&n);
+        for(j=2;j<=n;j++)
+        {
+            if(a[j]==0)
+                count++;
+        }
+        printf("%d\n",count);
+    }
+}

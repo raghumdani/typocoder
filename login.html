@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8" />
+		<title>Login</title>
+		<link rel = "stylesheet" type = "text/css" href = "Style/new_background.css" />
+		<link rel = "stylesheet" type = "text/css" href = "Style/all_pages.css" />
+		<link rel = "icon" href = "Images/logo.png" />
+		<!--<link rel = "stylesheet" type = "text/css" href = "Style/css/bootstrap.css" />
+		<script type="text/javascript" src = "Style/js/bootstrap.js"></script> -->
+
+	</head>
+	<body>
+		<div class = "header">
+			<a href = "index.php"><img src="Images/logo.png" /></a>
+		</div>
+		<div class = "login-form">
+			<form action = "index.php" method = "post">
+				<fieldset class = "acc-info">
+					<label>
+						Username
+						<input type = "text" name = "user_name" required/>
+					</label>
+					<label>
+						Password
+						<input type = "password" name = "password" required/>
+					</label>
+				</fieldset>
+				<fieldset class = "acc-action">
+					<label id = "ext">
+						<input type = "checkbox" name = "check_val"> <b>Remember me</b>
+					</label>
+					<input class = "btn" type = "submit" name = "submit" value = "Login" />
+				</fieldset>
+			</form>
+		</div>
+		<div class = "signup-page">
+			<p>Don't have an account? Create one.</p>
+			<a href = "signup.html"><button class = "btn">Sign Up</button></a>
+		</div>
+		<div class = "footer">
+			TypoCoder 2015 - <span id = "cur_year"></span> Developed by <b>Raghavendra M Dani</b><br />
+			Current Time: <span id = "date_time">null</span><br />
+		</div>
+		<script src = "Scripts/update_date.js"></script>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8" />
+		<title>Sign Up</title>
+		<link rel = "stylesheet" type = "text/css" href = "Style/all_pages.css" />
+		<link rel = "stylesheet" type = "text/css" href = "Style/signup_style.css" />
+		<link rel = "icon" href = "Images/logo.png" />
+		<!--<link rel = "stylesheet" type = "text/css" href = "Style/css/bootstrap.css" />
+		<script type="text/javascript" src = "Style/js/bootstrap.js"></script> -->
+
+	</head>
+	<body>
+		<div class = "header">
+			<a href = "index.php"><img src="Images/logo.png" /></a>
+		</div>
+		<div class = "signup-form">
+			<form action = "signup_results.php" method = "post">
+				<fieldset class = "acc-info">
+					<label>
+						Full Name
+						<input type = "text" name = "name" required/>
+					</label>
+					<label>
+						Date of Birth
+						<input type = "date" name = "dob" required/>
+					</label>
+					<label>
+						Username
+						<input type = "text" name = "user_name" required/>
+					</label>
+					<label>
+						Password
+						<input type = "password" name = "password" required/>
+					</label>
+					<label>
+						Repeat Password
+						<input type = "password" name = "r_password" required/>
+					</label>
+					<label>
+						E-mail
+						<input type = "email" name = "email" required />
+					</label>
+					<label>
+						Institution
+						<select name = "inst">
+							<option value = "NITK Surathkal">NITK Surathkal</option>
+							<option value = "IIT Bombay">IIT Bombay</option>
+							<option value = "IIT Madras">IIT Madras</option>
+							<option value = "RV College of Engineering">RV College of Engineering</option>
+							<option value = "Google">Google</option>
+							<option value = "FlipKart">FlipKart</option>
+							<option value = "Other">Other</option>
+						</select>
+					</label>
+					<label>
+						Batch
+						<input type = "number" name = "batch" placeholder = "2017" required/>
+					</label>
+					<label>
+						Work Background
+						<select name = "work">
+							<option value = "professional">Professional</option>
+							<option value = "student">Student</option>
+						</select>
+					<label>
+				</fieldset>
+				<fieldset class = "acc-action">
+					<label>
+						<input class = "btn" type = "submit" value = "Sign Up" />
+					</label>
+				</fieldset>
+			</form>
+		</div>
+
+		<div class = "footer">
+			TypoCoder 2015 - <span id = "cur_year"></span> Developed by <b>Raghavendra M Dani</b><br />
+			Current Time: <span id = "date_time">null</span><br />
+		</div>
+		<script src = "Scripts/update_date.js"></script>
+	</body>
+</html>

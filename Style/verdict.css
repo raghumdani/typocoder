@@ -1,0 +1,19 @@
+.dashboard {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+.verdict-box {
+	padding-left: 40%;
+}
+
+.ver-box {
+	position: relative;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 3%;
+}
+
+.ver-box td, th {
+	background-color: #F5F9FA;
+}
